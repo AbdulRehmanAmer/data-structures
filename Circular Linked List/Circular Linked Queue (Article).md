@@ -17,5 +17,5 @@ old = self.tail.next # this is the first element that was enqueued in the queue
 self.tail.next = old.next
 del old
 ```
+![image](https://github.com/AbdulRehmanAmer/data-structures/assets/115944146/07a8ff1a-18fc-4f1b-864f-1ff6eec770b4)
 
-![[Working of Circular Linked Queue.png]]
