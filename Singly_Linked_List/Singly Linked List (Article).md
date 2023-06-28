@@ -3,13 +3,13 @@ A Singly Linked List is a linear collection of nodes where each node connects to
 ### Why using it instead of Array?
 We use Singly Linked List (SLL) when we don't have a large space of **contiguous** memory portion. Machine stores the memory of an array in a contiguous portion and it is not guaranteed from which memory portion of an array will be occupied. 
 
-	For example, we have 10 blocks of memory, *just an example*, and we need 5 blocks to occupied for our required array. It depends on the machine which 5 blocks of the memory it will choose. It can start from 2nd block or from the 5th block, etc. 
+For example, we have 10 blocks of memory, *just an example*, and we need 5 blocks to occupied for our required array. It depends on the machine which 5 blocks of the memory it will choose. It can start from 2nd block or from the 5th block, etc. 
 	So, let's say we have all contiguous blocks occupied and we have few random blocks left in the memory such as *2nd, 3rd, 5th, 7th and 10th* block. We can see this is not the contiguous segment to store the array. 
 	Here SLL takes a heroic step and 5 remaining block can be filled with a node as it stores randomly in the memory, as told in the above section. We can make our custom order of the node by storing the reference of the other node.
 
 ### Real Life Examples:
-	Bus stops: Each node contains the information of the next stop 
-	Web Browser History: Where each node contains the information of previously visited site and vice versa. It can contain the refernce of recent site where recent site points to its parent site and so forth. It is possible, as an initial state, that current node might not have any reference of any site (previous or the next from where current site got browsed).
+- Bus stops: Each node contains the information of the next stop 
+- Web Browser History: Where each node contains the information of previously visited site and vice versa. It can contain the refernce of recent site where recent site points to its parent site and so forth. It is possible, as an initial state, that current node might not have any reference of any site (previous or the next from where current site got browsed).
 
 ### Implementation of Singly Linked List Using Stack:
 ```
