@@ -8,19 +8,20 @@ Deque is a type of data structure that has both functionalities of stack and que
 
 We can solve it in two ways. But I have attached the implementation of Circular Array as singly linked list is quite easy to code 👌 :
 ###### Circular Static Array:
-	Solving it using (CSA) is quite tricky. I have initialized front to the 1 and rear to the 0.
-	The Directions I am moving each of the pointers are the following:
-		append_left <- (front will move to the left: decrement by 1)
-		append_right -> (rear will move to the right: increment by 1)
-		pop_left -> (rear will move to the right: increment by 1)
-		pop_right <- (front will move to the left: decrement by 1)
-		
-	You can visualize the implementation of these pointers which is., if our left pointer is 0. For further left insertions it will be wrapped around to the tail of the deque and insert the data from right to the left side. (Hint: Initially, our front pointer is at index 1 then it'll decrement the front pointer by 1, first then assigns the parametric data at the position 0 then it will be -1 (wrapped around to the tail), then it will be -2 that is the second last element of the deque and so forth). This is how I made an implementation of append_left member function in the direction of   right -> left. So is the case of append_right, and remaining functionalities. 
+
+Solving it using (CSA) is quite tricky. I have initialized front to the 1 and rear to the 0.
+The Directions I am moving each of the pointers are the following:
+	append_left <- (front will move to the left: decrement by 1)
+	append_right -> (rear will move to the right: increment by 1)
+	pop_left -> (rear will move to the right: increment by 1)
+	pop_right <- (front will move to the left: decrement by 1)
 	
-	From this implementation my code will remain intact from any kind of throws/exceptions (IndexError) except for custom exceptions that I made. Above all, my code is robust and ready to beat any kind of desired test cases.
+You can visualize the implementation of these pointers which is., if our left pointer is 0. For further left insertions it will be wrapped around to the tail of the deque and insert the data from right to the left side. (Hint: Initially, our front pointer is at index 1 then it'll decrement the front pointer by 1, first then assigns the parametric data at the position 0 then it will be -1 (wrapped around to the tail), then it will be -2 that is the second last element of the deque and so forth). This is how I made an implementation of append_left member function in the direction of   right -> left. So is the case of append_right, and remaining functionalities. 
+	
+From this implementation my code will remain intact from any kind of throws/exceptions (IndexError) except for custom exceptions that I made. Above all, my code is robust and ready to beat any kind of desired test cases.
 	
 ###### Circular Linked List:
-	Solving it using (CLL) is quite easy. Because we have to make a sentinel node and connect only the front node with it and tail nodes will be connected before the sentinel node as it'll be wrapped around due to its circular property. Remaining will be between front and tail node in a prompted order. 
+Solving it using (CLL) is quite easy. Because we have to make a sentinel node and connect only the front node with it and tail nodes will be connected before the sentinel node as it'll be wrapped around due to its circular property. Remaining will be between front and tail node in a prompted order. 
 
 ## Implementation of Deque using Circular Array
 
