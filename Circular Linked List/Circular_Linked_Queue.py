@@ -70,6 +70,7 @@ if __name__ == "__main__":
     
     queue.dequeue()
     
+    # queue.rotate()
     queue.rotate()
     
     print (queue)
