@@ -3,7 +3,7 @@ After covering the chapter of stack, next data structure is Queue. I bet that yo
 ## Queue:
 Queue is a data structure that follows the principle of first-in, first-out that means the data inserted (enqueued in the queue) will be popped (dequeued from the queue) first then remaining data would get their turn. 
 -	There are two main mechanism this data structure has i.e., enqueue and dequeue as elaborated above.
--	Also, people call it a close cousing of stack, as a funny term.
+-	Also, people call it a close cousin of stack, as a funny term.
 
 ## Real Life Examples:
 - Buying ticket from a cinema house, where each person that arrives first would get their turn first.
